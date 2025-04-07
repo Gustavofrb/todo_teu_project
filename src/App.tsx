@@ -5,6 +5,7 @@ import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,19 +37,39 @@ function App() {
 
         {/* Barra de Navegação */}
         <nav
-          className={`fixed top-0 left-0 w-full z-10 px-6 py-4 transition-colors duration-300 ${
+          className={`fixed top-0 left-0 w-full z-50 px-6 py-4 transition-colors duration-300 ${
             isScrolled ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'
           }`}
         >
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">Todo Teu</h1>
-            <div className="flex gap-6">
+            {/* Menu para telas maiores */}
+            <div className="hidden md:flex gap-6">
               <a href="#about" className="hover:text-blue-500 transition-colors">Sobre</a>
               <a href="#mission" className="hover:text-blue-500 transition-colors">Missão</a>
               <a href="#help" className="hover:text-blue-500 transition-colors">Ajude</a>
               <a href="#contact" className="hover:text-blue-500 transition-colors">Contato</a>
             </div>
+            {/* Botão de menu para dispositivos móveis */}
+            <button
+              className={`md:hidden ${
+                isScrolled ? 'text-black' : 'text-white'
+              } transition-colors`}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Abrir menu"
+            >
+              ☰
+            </button>
           </div>
+          {/* Menu dropdown para dispositivos móveis */}
+          {menuOpen && (
+            <div className="md:hidden mt-4 flex flex-col gap-4 bg-white text-black p-4 rounded shadow-md">
+              <a href="#about" className="hover:text-blue-500 transition-colors">Sobre</a>
+              <a href="#mission" className="hover:text-blue-500 transition-colors">Missão</a>
+              <a href="#help" className="hover:text-blue-500 transition-colors">Ajude</a>
+              <a href="#contact" className="hover:text-blue-500 transition-colors">Contato</a>
+            </div>
+          )}
         </nav>
 
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
@@ -256,6 +277,14 @@ function App() {
               </a>
             </div>
           </div>
+        </div>
+        <div className="text-center mt-8">
+          <a
+            href="/login" // Substitua "/login" pelo caminho real da sua página de login
+            className="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors"
+          >
+            Intranet
+          </a>
         </div>
         <div className="text-center text-gray-400 mt-8 text-sm">
           © {new Date().getFullYear()} Todo Teu. Todos os direitos reservados.
