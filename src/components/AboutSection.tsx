@@ -11,10 +11,11 @@ const AboutSection: React.FC = () => {
           />
           <div>
             <p className="text-lg text-gray-700 mb-6">
-              Somos uma organização dedicada a promover o amor, a solidariedade e a fé. Nosso objetivo é transformar vidas por meio de ações concretas e inspiradoras.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, provident suscipit culpa dignissimos praesentium voluptas alias fuga obcaecati iste deserunt sapiente, voluptatibus eum! Nam minus voluptatem, ut voluptatum commodi laudantium.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              Trabalhamos em comunidade para ajudar aqueles que mais precisam, fortalecendo laços e construindo um futuro melhor para todos.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ut laudantium optio doloremque ex porro consectetur labore molestiae fugit fugiat tenetur praesentium possimus id, illo eos, expedita temporibus explicabo aliquam?
+             
             </p>
             <button
               type="button"
