@@ -138,15 +138,12 @@ function App() {
             />
             <div>
               <p className="text-lg text-gray-700 mb-6">
-                Todo Teu é uma organização dedicada a transformar vidas através
-                do amor e da solidariedade. Nosso trabalho é baseado no
-                compromisso com aqueles que mais precisam de apoio e
-                acolhimento.
+                lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut    
               </p>
               <p className="text-lg text-gray-700 mb-6">
-                Através de nossas ações e projetos, buscamos criar um impacto
-                positivo na sociedade, levando esperança e dignidade para
-                pessoas em situação de vulnerabilidade.
+              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               </p>
               <button
                 type="button"
