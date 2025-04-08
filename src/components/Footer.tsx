@@ -42,7 +42,9 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="text-center mt-8">
-        <a href="/login" className="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors">Intranet</a>
+        <a href="/login" className="inline-block bg-blue-700 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-colors">
+          Intranet
+        </a>
       </div>
       <div className="text-center text-gray-400 mt-8 text-sm">
         © {new Date().getFullYear()} Todo Teu. Todos os direitos reservados.

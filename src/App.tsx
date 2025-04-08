@@ -7,6 +7,7 @@ import HelpSection from './components/HelpSection';
 import Footer from './components/Footer';
 import Participar from './pages/Participar';
 import Conheca from './pages/Conheca';
+import Login from './pages/Login'; // Página de login
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,6 +54,7 @@ function App() {
         />
         <Route path="/conheca" element={<Conheca />} />
         <Route path="/participar" element={<Participar />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
