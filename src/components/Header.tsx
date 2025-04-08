@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled, setMenuOpen, menuOpen }) =>
           Inflamar a chama de amor aos Sagrados!
         </p>
         <a
-          href="/participar" // Substitua "/participar" pelo caminho da página de destino
+          href="/conheca" // Redireciona para a página "Conheça"
           className="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-600 transition-colors flex items-center gap-2"
         >
           Faça Parte

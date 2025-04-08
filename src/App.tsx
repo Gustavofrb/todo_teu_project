@@ -3,9 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import MissionSection from './components/MissionSection';
 import AboutSection from './components/AboutSection';
-import HelpSection from './components/HelpSection'; // Importando o novo componente
+import HelpSection from './components/HelpSection';
 import Footer from './components/Footer';
 import Participar from './pages/Participar';
+import Conheca from './pages/Conheca';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +30,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        {/* Rota principal */}
         <Route
           path="/"
           element={
@@ -37,7 +37,7 @@ function App() {
               <Header isScrolled={isScrolled} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
               <MissionSection />
               <AboutSection />
-              <HelpSection /> {/* Adicionando a seção "Como Ajudar" */}
+              <HelpSection />
               <Footer />
               {showScrollTop && (
                 <button
@@ -51,7 +51,7 @@ function App() {
             </div>
           }
         />
-        {/* Rota para a página de cadastro */}
+        <Route path="/conheca" element={<Conheca />} />
         <Route path="/participar" element={<Participar />} />
       </Routes>
     </Router>

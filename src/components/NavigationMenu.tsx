@@ -12,7 +12,14 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ isScrolled, menuOpen, s
       }`}
     >
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Todo Teu</h1>
+        {/* Imagem clicável que redireciona para o home */}
+        <a href="/" className="flex items-center">
+          <img
+            src="/images/image.png" // Substitua pelo caminho correto da imagem
+            alt="Comunidade Católica Todo Teu"
+            className="w-12 h-12 rounded-full"
+          />
+        </a>
         <div className="hidden md:flex gap-6">
           <a href="#about" className="hover:text-blue-500 transition-colors">Sobre</a>
           <a href="#mission" className="hover:text-blue-500 transition-colors">Missão</a>
