@@ -15,7 +15,7 @@ const NavigationMenu: React.FC<NavigationMenuProps> = ({ isScrolled, menuOpen, s
         {/* Imagem clicável que redireciona para o home */}
         <a href="/" className="flex items-center">
           <img
-            src="/public/images/image.png" // Substitua pelo caminho correto da imagem
+            src="/images/image.png" // Substitua pelo caminho correto da imagem
             alt="Comunidade Católica Todo Teu"
             className="w-12 h-12 rounded-full"
           />
