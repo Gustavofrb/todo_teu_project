@@ -5,8 +5,8 @@ const AboutSection: React.FC = () => {
         <h2 className="text-4xl font-bold text-center mb-16">Quem Somos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <img
-            src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-            alt="Voluntários em ação"
+            src="/images/about.jpg" // Substitua pelo caminho correto da imagem
+            alt="Somos uma comunidade católica"
             className="rounded-lg shadow-lg"
           />
           <div>
